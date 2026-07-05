@@ -1,0 +1,109 @@
+{
+  "personal_info": {
+    "name": "Hariprabha Duraisamy",
+    "title": "AI / ML Engineer",
+    "tagline": "Building intelligent, data-driven systems with Python, Machine Learning, Generative AI and RAG architectures.",
+    "email": "dhariprabhaduraisamy@gmail.com",
+    "phone": "+91 93442 64094",
+    "location": "Chennai, India",
+    "linkedin": "https://www.linkedin.com/in/hariprabha-duraisamy-104327215/",
+    "github": "https://github.com/dhariprabhaduraisamy-glitch",
+    "profile_photo_url": "assets/profile.jpeg",
+    "intro_video_url": "assets/intro.mp4",
+    "resume_url": "assets/resume.pdf"
+  },
+  "career_objective": "Aspiring AI Engineer with a strong foundation in Python programming, Machine Learning, Generative AI, and LLM-based applications. Skilled in developing AI solutions using Python, LangChain, RAG architecture, vector databases, and backend APIs. Seeking an opportunity to contribute to AI/ML projects while improving skills in intelligent automation and AI application development.",
+  "professional_summary": "Process Associate with experience in engineering and product development support, data validation, issue analysis, workflow monitoring, and process improvement activities. Hands-on knowledge in Python-based AI application development, Machine Learning fundamentals, LLM applications, and RAG-based chatbot systems through personal projects.",
+  "skills": {
+    "programming": [
+      { "name": "Python", "level": 85 },
+      { "name": "SQL", "level": 75 },
+      { "name": "REST APIs & JSON", "level": 65 }
+    ],
+    "ai_ml": [
+      { "name": "Machine Learning Fundamentals", "level": 70 },
+      { "name": "Generative AI & LLMs", "level": 75 },
+      { "name": "Prompt Engineering", "level": 75 },
+      { "name": "RAG Architecture", "level": 70 }
+    ],
+    "data_tools": [
+      { "name": "NumPy", "level": 75 },
+      { "name": "Pandas", "level": 80 },
+      { "name": "Scikit-learn", "level": 65 },
+      { "name": "Power BI", "level": 80 },
+      { "name": "Excel", "level": 85 }
+    ],
+    "ai_dev_tools": [
+      { "name": "LangChain", "level": 70 },
+      { "name": "FAISS", "level": 65 },
+      { "name": "Ollama", "level": 65 }
+    ]
+  },
+  "software_proficiency": {
+    "Programming & AI Tools": ["Python", "Jupyter Notebook", "VS Code", "Git/GitHub"],
+    "AI Development Tools": ["LangChain", "Streamlit", "Ollama", "FAISS"],
+    "Data Tools": ["NumPy", "Pandas", "Scikit-learn", "SQL"],
+    "Data Visualization": ["Power BI", "Dashboard Development", "Data Reporting"],
+    "Microsoft Office": ["Excel", "Word", "PowerPoint", "Access", "SharePoint"]
+  },
+  "work_experience": [
+    {
+      "company": "Caresoft Global Pvt Ltd",
+      "role": "Process Associate",
+      "location": "Chennai",
+      "duration": "2023 — Present",
+      "responsibilities": [
+        "Collaborated with Factory, Product, and Coding teams to support engineering and product development activities.",
+        "Performed data validation, defect identification, and issue documentation for product improvement.",
+        "Supported BOM and MM integration activities by validating data accuracy and monitoring workflows.",
+        "Analyzed production issues, identified root causes, and coordinated with teams for resolution.",
+        "Created and managed Process Change Requests (PCRs) to improve processes and quality.",
+        "Contributed to continuous improvement activities and workflow optimization."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Nexora AI — Personal AI Assistant",
+      "status": "completed",
+      "description": "An AI-powered personal assistant chatbot built with Python, LLM, RAG, LangChain, FAISS, Streamlit, and Ollama.",
+      "highlights": [
+        "Built a chatbot to answer profile and project-related queries.",
+        "Implemented RAG architecture with document processing and semantic search.",
+        "Used embeddings and vector retrieval for context-aware responses.",
+        "Created an interactive Streamlit interface."
+      ],
+      "tech_stack": ["Python", "LangChain", "RAG", "FAISS", "Streamlit", "Ollama"],
+      "link": ""
+    },
+    {
+      "name": "AI/ML Portfolio Website (this site)",
+      "status": "completed",
+      "description": "A dependency-light, static portfolio driven entirely by a single JSON content file — no framework, no backend, no rebuild needed to update content.",
+      "highlights": [
+        "Content-driven architecture: every section renders from data.json.",
+        "Graceful fallback to an embedded data snapshot if the fetch fails.",
+        "Custom dashboard-style visual language built with plain CSS — no UI library."
+      ],
+      "tech_stack": ["HTML5", "CSS3", "JavaScript", "JSON"],
+      "link": ""
+    }
+  ],
+  "education": [
+    {
+      "institution": "Nallamuthu Gounder Mahalingam College",
+      "degree": "Bachelor of Commerce (B.Com) — Accounting",
+      "duration": "2019 — 2022"
+    },
+    {
+      "institution": "Municipal Girls Higher Secondary School, Pollachi",
+      "degree": "HSC — Business Mathematics",
+      "duration": "2018 — 2019"
+    },
+    {
+      "institution": "Government Girls Higher Secondary School, Mannur",
+      "degree": "SSLC — General Studies",
+      "duration": "2016 — 2017"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hariprabha Duraisamy — AI/ML Engineer</title>
+<meta name="description" content="Portfolio of Hariprabha Duraisamy — Aspiring AI Engineer specializing in Machine Learning, Generative AI, RAG systems and Data Analytics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo">Hariprabha<span class="nav__logo-dot">.</span></a>
+    <div class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav__actions" id="navActions"></div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="top">
+  <div class="hero__bg" aria-hidden="true">
+    <svg class="hero__mesh" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <radialGradient id="meshGlow" cx="50%" cy="30%" r="70%">
+          <stop offset="0%" stop-color="#6C5CE7" stop-opacity="0.28"/>
+          <stop offset="100%" stop-color="#6C5CE7" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="800" height="600" fill="url(#meshGlow)"/>
+      <g stroke="#2A3352" stroke-width="1" opacity="0.55" id="meshLines"></g>
+      <g fill="#45D9C8" id="meshNodes"></g>
+    </svg>
+  </div>
+
+  <div class="hero__inner">
+    <div class="hero__text">
+      <span class="eyebrow">AI / ML Engineer &amp; Data Analyst</span>
+      <h1 class="hero__name" id="heroName">Loading…</h1>
+      <p class="hero__tagline" id="heroTagline"></p>
+
+      <div class="hero__cta">
+        <a href="assets/resume.pdf" download class="btn btn--primary">
+          <svg viewBox="0 0 24 24" class="icon"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Download Resume
+        </a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+
+      <div class="hero__social" id="heroSocial"></div>
+    </div>
+
+    <div class="hero__card">
+      <div class="hero__photo-ring">
+        <img id="profilePhoto" class="hero__photo" src="" alt="Hariprabha Duraisamy" />
+      </div>
+      <div class="hero__quicklinks" id="heroQuicklinks"></div>
+    </div>
+  </div>
+
+  <div class="hero__stats" id="heroStats"></div>
+</header>
+
+<!-- ================= VIDEO ================= -->
+<section class="section" id="intro">
+  <div class="section__head">
+    <span class="section__kicker">Introduction</span>
+    <h2 class="section__title">A quick hello</h2>
+  </div>
+  <div class="panel panel--video">
+    <video id="introVideo" class="video-frame" controls playsinline></video>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <div class="section__head">
+    <span class="section__kicker">About</span>
+    <h2 class="section__title">Career focus</h2>
+  </div>
+  <div class="about-grid">
+    <div class="panel">
+      <h3 class="panel__title">Objective</h3>
+      <p id="aboutObjective"></p>
+    </div>
+    <div class="panel">
+      <h3 class="panel__title">Professional Summary</h3>
+      <p id="aboutSummary"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="section" id="skills">
+  <div class="section__head">
+    <span class="section__kicker">Capabilities</span>
+    <h2 class="section__title">Skills &amp; Proficiency</h2>
+  </div>
+
+  <div class="rings" id="coreRings"></div>
+
+  <div class="panel">
+    <div class="skills__tabs" id="skillTabs"></div>
+    <div class="skills__panels" id="skillPanels"></div>
+  </div>
+
+  <div class="section__head section__head--sub">
+    <h3 class="section__subtitle">Tools &amp; Software</h3>
+  </div>
+  <div class="tools__grid" id="toolsGrid"></div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="section" id="experience">
+  <div class="section__head">
+    <span class="section__kicker">Career</span>
+    <h2 class="section__title">Work Experience</h2>
+  </div>
+  <div class="timeline" id="experienceTimeline"></div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="section" id="projects">
+  <div class="section__head">
+    <span class="section__kicker">Portfolio</span>
+    <h2 class="section__title">Projects</h2>
+  </div>
+  <div class="projects__grid" id="projectsGrid"></div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section class="section" id="education">
+  <div class="section__head">
+    <span class="section__kicker">Background</span>
+    <h2 class="section__title">Education</h2>
+  </div>
+  <div class="timeline timeline--education" id="educationTimeline"></div>
+</section>
+
+<!-- ================= CONTACT / FOOTER ================= -->
+<footer class="footer" id="contact">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <div class="footer__name" id="footerName"></div>
+      <p class="footer__blurb">Open to opportunities in AI/ML Engineering and Data Analytics roles across Chennai, Coimbatore and Bangalore.</p>
+      <a href="assets/resume.pdf" download class="btn btn--primary btn--sm">Download Resume</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Navigate</h4>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Connect</h4>
+      <div id="footerLinks"></div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <span id="footerCopy"></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
