@@ -10,6 +10,73 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
+<!-- ================= NEXORA AI FLOATING WIDGET START ================= -->
+<!-- 1. Floating Chat Trigger Button (Bottom Right) -->
+<div id="nexora-chat-trigger" style="position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: radial-gradient(circle, #6C5CE7 0%, #00F2FE 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(108, 92, 231, 0.4); cursor: pointer; z-index: 99999; transition: transform 0.2s ease-in-out;">
+  <svg viewBox="0 0 24 24" style="width: 28px; height: 28px; fill: none; stroke: #FFFFFF; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;">
+    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+  </svg>
+</div>
+
+<!-- 2. Minimalist Popup Compact Chat Container Window -->
+<div id="nexora-chat-window" style="position: fixed; bottom: 105px; right: 30px; width: 380px; height: 500px; background: #0B0E14; border: 1px solid #2A3352; border-radius: 16px; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6); display: none; flex-direction: column; overflow: hidden; z-index: 99999; font-family: 'Inter', sans-serif;">
+  <!-- Header Control Bar -->
+  <div style="background: #161B22; padding: 15px 20px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #21262D;">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <div style="width: 8px; height: 8px; background: #00F2FE; border-radius: 50%; box-shadow: 0 0 8px #00F2FE;"></div>
+      <span style="color: #FFFFFF; font-weight: 600; font-size: 0.95rem; letter-spacing: -0.3px;">NEXORA AI</span>
+    </div>
+    <!-- Close Icon Button -->
+    <span id="nexora-chat-close" style="color: #8B949E; cursor: pointer; font-size: 1.3rem; line-height: 1; transition: color 0.2s;">&times;</span>
+  </div>
+  
+  <!-- Content Embedding Frame Workspace -->
+  <div style="flex: 1; background: #0B0E14;">
+    <iframe 
+      src="https://hariprabha06-nexora-ai.hf.space?embed=true" 
+      width="100%" 
+      height="100%" 
+      style="border: none; background: #0B0E14;"
+      allow="clipboard-write">
+    </iframe>
+  </div>
+</div>
+
+<!-- 3. Micro Interaction Toggle Script -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const trigger = document.getElementById("nexora-chat-trigger");
+    const windowEl = document.getElementById("nexora-chat-window");
+    const closeBtn = document.getElementById("nexora-chat-close");
+
+    // Click trigger to toggle window display visibility
+    trigger.addEventListener("click", function() {
+      if (windowEl.style.display === "none" || windowEl.style.display === "") {
+        windowEl.style.display = "flex";
+        trigger.style.transform = "scale(0.9) rotate(90deg)";
+      } else {
+        windowEl.style.display = "none";
+        trigger.style.transform = "scale(1) rotate(0deg)";
+      }
+    });
+
+    // Close button logic matrix resets layout bounds
+    closeBtn.addEventListener("click", function(e) {
+      e.stopPropagation();
+      windowEl.style.display = "none";
+      trigger.style.transform = "scale(1) rotate(0deg)";
+    });
+    
+    // Hover animation micro scaling controls
+    trigger.addEventListener("mouseenter", function() {
+      if(windowEl.style.display !== "flex") trigger.style.transform = "scale(1.08)";
+    });
+    trigger.addEventListener("mouseleave", function() {
+      if(windowEl.style.display !== "flex") trigger.style.transform = "scale(1)";
+    });
+  });
+</script>
+<!-- ================= NEXORA AI FLOATING WIDGET END ================= -->
 <body>
 
 <!-- ================= NAV ================= -->
