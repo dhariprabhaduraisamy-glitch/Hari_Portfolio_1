@@ -1,0 +1,11 @@
+### HARI'S PROJECTS KNOWLEDGE BASE
+
+PROJECT ONE: NEXORA AI
+Developer: Hari
+Description: Built an AI-powered personal assistant chatbot...
+
+---
+
+PROJECT TWO: NOVEXA MACRO
+Developer: Hari
+Description: Developed Excel VBA macros to automate repetitive data tasks...

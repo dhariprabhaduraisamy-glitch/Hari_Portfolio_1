@@ -1,0 +1,11 @@
+My skills:
+
+Python
+AI
+Machine Learning
+FastAPI
+LangChain
+powerBI
+SQl
+datacleaning
+Git
